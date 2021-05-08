@@ -117,32 +117,21 @@ From the results below, it can be seen that the ADA Boost performs best among al
 
 For the sake of brevity, the results from the ADA-Boost model for the datasets (a) to (d) would be focused on.
 
-**a.	Model with only TFL Data:**
-
 ![](/Images/1.png)
 
-
 Discussion: While using only the TFL data in case (a), we can see that the model could not be generalised well and hence a percentage error of 20.2 could be seen on daily prediction of bike rides. This is because, this dataset only uses features like day of the week, month and year. While these features are very important for predicting the number of bike rides, this dataset doesn’t include the most important factors that affects the bike ride – weather and holidays. 
-
-**b. Model with only TFL Data, Weather Data and Holiday Data:**
 
 ![](/Images/2.png)
 
 Discussion: For case (b), it can be seen that as the weather data was added into the dataset along with the holiday data, there has been a considerable jump in system accuracy. The errors decreased by approximately 4%, validating the need of weather data for the bike prediction problems.
 
-**c. Model with only TFL Data, Power Generation Data and Holiday Data:**
-
 ![](/Images/3.png)
 
 For case (c), as similar to case (a), running the model without the weather features reduces the accuracy. In this model, the weather data was removed and instead the power generation dataset was included in the model to specifically answer the question - “Can national electrical power generation help estimate how many bikes are hired?”  While its very intuitive to assert that a country’s power generation numbers might not affect its bike prediction numbers, we did a heatmap correlation to weigh the correlation of the feature set. While most of the features were not correlated to the number of bike rides, few of them had a correlation (very slim) and was considered for modelling. From the results, it is evident that the features were definitely correlated by chance as including them did decrease the overall performance accuracy of the model. 
 
-**d.  Model with only TFL, Power Generation Data, Weather and Holiday Data:**
-
 ![](/Images/4.png)
 
 The model which includes all the features – i.e., TFL data, Power Generation Data, Weather Data and Holiday data gave the best results. While more features do increase the accuracy of the model in some cases, sometimes it introduces complexities like parallelism and multi-collinearity in the high dimensions. The main rationale behind using the heat map correlation was to identify such features that were needed for this analysis. It’s evident from the results that using all the datasets- i.e, the TFL dataset, the Power Generation dataset, the Weather dataset and the Holidays dataset, the best machine learning model could be developed which has the least mean absolute percentage error.  
-
-**e. Time Series Modelling**
 
 ![](/Images/5.png)
 
