@@ -1,4 +1,4 @@
-**Task Description:
+>Task Description:
 
 This task is about forecasting how many bikes are rented from the TFL (Transport for London) Cycle Hire scheme.
 Specifically, you should attempt to answer the question “Can national electrical power generation help estimate how many bikes are hired?”
@@ -6,7 +6,6 @@ The idea is that these two datasets may be correlated with data we don’t have 
 Data Sources (attached):
 
 1.       tfl-daily-cycle-hires.xlsx : the daily number of hired bikes. Downloaded from https://data.london.gov.uk/dataset/number-bicycle-hires
-
 2.       electrical_power_data.csv. Downloaded from : https://www.ref.org.uk/fuel/index.php?valdate=2009&tab=dp&share=N (Substituted “2009” in the URL to get data for later years)
 
 You may also use other data sources of your choice (e.g. the attached Bank Holidays ukbankholidays.csv).  
@@ -22,7 +21,6 @@ You can use any model(s) of your choice. However, you should
 2.       Outline how/why you selected the features which you used as inputs.
 3.       Evaluate your model(s) through multiple metrics.
 
-We generally expect candidates to spend around 3 hours on the task, depending on your availability**
 
 Solution :  
 
