@@ -118,47 +118,33 @@ From the results below, it can be seen that the ADA Boost performs best among al
 For the sake of brevity, the results from the ADA-Boost model for the datasets (a) to (d) would be focused on.
 
 **a.	Model with only TFL Data:**
-Model	MAE	MSE	RMSE	MAPE
-Linear Regression	6448.5	66507327.4	8155.2	31.5
-Decision Tree	4069.3	30027910.1	5479.7	21.2
-Random Forest	4000.8	29681972.9	5448.1	21.0
-ADA Boost	4045.3	27243208.1	5219.5	20.2
-Neural Network	4338.6	34352519.6	5861.1	22.6
+
+![](/Images/1.png)
+
+
 Discussion: While using only the TFL data in case (a), we can see that the model could not be generalised well and hence a percentage error of 20.2 could be seen on daily prediction of bike rides. This is because, this dataset only uses features like day of the week, month and year. While these features are very important for predicting the number of bike rides, this dataset doesn’t include the most important factors that affects the bike ride – weather and holidays. 
 
 **b. Model with only TFL Data, Weather Data and Holiday Data:**
-Model	MAE	MSE	RMSE	MAPE
-Linear Regression	3553.3	24499071.4	4949.6	19.1
-Decision Tree	4136.5	29763984.5	5455.6	21.1
-Random Forest	3254.8	18612487.5	4314.2	16.7
-ADA Boost	3303.6	18012943.5	4244.1	16.4
-Neural Network	3669.1	25677296.8	5067.2	19.6
+
+![](/Images/2.png)
+
 Discussion: For case (b), it can be seen that as the weather data was added into the dataset along with the holiday data, there has been a considerable jump in system accuracy. The errors decreased by approximately 4%, validating the need of weather data for the bike prediction problems.
 
 **c. Model with only TFL Data, Power Generation Data and Holiday Data:**
-Model	MAE	MSE	RMSE	MAPE
-Linear Regression	5493.2	51081604.7	7147.1	27.6
-Decision Tree	4455.9	35599724.2	5966.5	23.1
-Random Forest	4090.9	31501625.3	5612.6	21.7
-ADA Boost	4199.3	30303117.2	5504.8	21.3
-Neural Network	7595.1	95879133.7	9791.7	37.9
+
+![](/Images/3.png)
 
 For case (c), as similar to case (a), running the model without the weather features reduces the accuracy. In this model, the weather data was removed and instead the power generation dataset was included in the model to specifically answer the question - “Can national electrical power generation help estimate how many bikes are hired?”  While its very intuitive to assert that a country’s power generation numbers might not affect its bike prediction numbers, we did a heatmap correlation to weigh the correlation of the feature set. While most of the features were not correlated to the number of bike rides, few of them had a correlation (very slim) and was considered for modelling. From the results, it is evident that the features were definitely correlated by chance as including them did decrease the overall performance accuracy of the model. 
 
 **d.  Model with only TFL, Power Generation Data, Weather and Holiday Data:**
-Model	MAE	MSE	RMSE	MAPE
-Linear Regression	3535.4	24212469.6	4920.6	19.0
-Decision Tree	3888.5	28374324.4	5326.7	20.6
-Random Forest	3137.3	17907989.9	4231.7	16.3
-ADA Boost	3213.0	17504361.8	4183.8	16.1
-Neural Network	4535.0	33273671.3	5768.3	22.3
+
+![](/Images/4.png)
 
 The model which includes all the features – i.e., TFL data, Power Generation Data, Weather Data and Holiday data gave the best results. While more features do increase the accuracy of the model in some cases, sometimes it introduces complexities like parallelism and multi-collinearity in the high dimensions. The main rationale behind using the heat map correlation was to identify such features that were needed for this analysis. It’s evident from the results that using all the datasets- i.e, the TFL dataset, the Power Generation dataset, the Weather dataset and the Holidays dataset, the best machine learning model could be developed which has the least mean absolute percentage error.  
 
 **e. Time Series Modelling**
-Model	MAE	MSE	RMSE	MAPE
-ARIMA	10373.6	169166593.9	13006.4	50.3
-SARIMA	8915.2	123952656.3	11133.4	43.1
+
+![](/Images/5.png)
 
 One of the Machine Learning techniques that deals with time series data is time-series modelling. As the name suggest, time series modelling involves working with data that are based on time (hours, minutes, days, months etc) to device meaningful conclusions on trends and pattern of the data. Time series modelling is almost the first go for of any machine learning model where there are serially correlated data as in this example of bike ride sharing. For the time-series modelling, the most common machine learning technique - ARIMA and SARIMA have been used.
  From the results above, it can be seen that Seasonal ARIMA model performed better than ARIMA model. This is because the bike sharing model has a seasonality factor which is taken care by the SARIMA algorithm. The ARIMA and SARIMA parameters are both automatically chosen by the auto-arima function of scikit-learn library of python pandas which choses the order of the p, d and q parameters by minimizing the ‘AIC’ criteria of the model. While the machine learning analysis using time-series shows a considerable error between the test data and the predicted data, it has to be kept in mind that time series data does takes care of complex factors like stationarity which are not considered by other models. 
@@ -169,5 +155,3 @@ It is well known fact that the principal operating costs of bike share costs are
 
 **FUTURE SCOPE**
 As future steps for this analysis, there are a number of things that could be done to improve the predictions of the model. While hyper-parameter tuning for the regression algorithms might increase the model efficiency and reduce the errors, including granular data, like the start hour might increase the model efficacy. Fetching bike ride data based on the journey start and stop locations helps to identify travel patterns and might address the problem of bike relocation better. Another method of improving performance is to add weather data as exogenous variables to the time-series model which might decrease the prediction error and has been kept as the future steps for this exercise.
-
-![image](https://user-images.githubusercontent.com/76854946/117554997-41f0b400-b053-11eb-802e-44a8e0d9cc87.png)
