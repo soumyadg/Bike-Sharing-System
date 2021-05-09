@@ -3,7 +3,8 @@
 This task is about forecasting how many bikes are rented from the TFL (Transport for London) Cycle Hire scheme.
 Specifically, you should attempt to answer the question “Can national electrical power generation help estimate how many bikes are hired?”
 The idea is that these two datasets may be correlated with data we don’t have information on (e.g. the weather).
-Data Sources (attached):
+
+Data Sources :
 
 1.       tfl-daily-cycle-hires.xlsx : the daily number of hired bikes. Downloaded from https://data.london.gov.uk/dataset/number-bicycle-hires
 2.       electrical_power_data.csv. Downloaded from : https://www.ref.org.uk/fuel/index.php?valdate=2009&tab=dp&share=N (Substituted “2009” in the URL to get data for later years)
@@ -24,7 +25,7 @@ You can use any model(s) of your choice. However, you should
 
 Solution :  
 
-# Bike Sharing System 🚵‍🚴🏻
+# Bike Sharing System 🚴🏻
 
 **CONTEXT**
 Bike riding has been a very important section of urban transport due to its ability to contribute to its fast, sustainable, flexible and cost-efficient transportation. While bicycle rides contribute to healthy and active lifestyle, there is a sudden push from the local government authorities, that boosts its citizens to commute using bikes. This has been implemented using various types of policy measures including the construction and improvement of bicycle lanes and proper bike parking facilities. While boosting bike sharing in cities being one of the major improvements over the last decade, the introduction of e-scooters and e-bikes is another factor that increases the attractiveness of such plans. However, in order to understand the bike flows graphs, there is a need to focus on external factors like current bike flows and what factors influence rides and riders such as weather and safety of such bike rides. While there has been a recent spike in bicycle sharing during the pandemic because of obvious reasons, this analysis aims to look into the prediction of bicycle ride sharing based on multiple factors for the bike ride sharing scheme by the Transport for London (TFL) in the city of London.
