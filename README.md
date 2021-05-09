@@ -24,7 +24,7 @@ You can use any model(s) of your choice. However, you should
 
 Solution :  
 
-# Bike-Sharing-System
+# Bike Sharing System 🚵‍🚴🏻
 
 **CONTEXT**
 Bike riding has been a very important section of urban transport due to its ability to contribute to its fast, sustainable, flexible and cost-efficient transportation. While bicycle rides contribute to healthy and active lifestyle, there is a sudden push from the local government authorities, that boosts its citizens to commute using bikes. This has been implemented using various types of policy measures including the construction and improvement of bicycle lanes and proper bike parking facilities. While boosting bike sharing in cities being one of the major improvements over the last decade, the introduction of e-scooters and e-bikes is another factor that increases the attractiveness of such plans. However, in order to understand the bike flows graphs, there is a need to focus on external factors like current bike flows and what factors influence rides and riders such as weather and safety of such bike rides. While there has been a recent spike in bicycle sharing during the pandemic because of obvious reasons, this analysis aims to look into the prediction of bicycle ride sharing based on multiple factors for the bike ride sharing scheme by the Transport for London (TFL) in the city of London.
