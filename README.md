@@ -5,7 +5,6 @@ Specifically, you should attempt to answer the question “Can national electric
 The idea is that these two datasets may be correlated with data we don’t have information on (e.g. the weather).
 
 Data Sources :
-
 1.       tfl-daily-cycle-hires.xlsx : the daily number of hired bikes. Downloaded from https://data.london.gov.uk/dataset/number-bicycle-hires
 2.       electrical_power_data.csv. Download from : https://www.ref.org.uk/fuel/index.php?valdate=2009&tab=dp&share=N 
 
