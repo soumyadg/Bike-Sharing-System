@@ -90,7 +90,7 @@ One Hot Encoding is generally used to deal with categorical variables in the dat
 •	TFL data merged with power generation data and holiday data
 •	TFL data merged with weather data, power generation data and holiday data
 
-**ALGORITHM:** While the objective of the modelling exercise is to predict bike hires, we will be using regression-based analysis techniques. 5 different machine learning models have been used for this analysis:
+**ALGORITHMS:** While the objective of the modelling exercise is to predict bike hires, we will be using regression-based analysis techniques. 5 different machine learning models have been used for this analysis:
 
 •	Linear Regression 
 •	Decision Tree Regressor
