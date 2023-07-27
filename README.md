@@ -2,7 +2,7 @@
 
 This task is about forecasting how many bikes are rented from the TFL (Transport for London) Cycle Hire scheme.
 Specifically, you should attempt to answer the question “Can national electrical power generation help estimate how many bikes are hired?”
-The idea is that these two datasets may be correlated with data we don’t have information on (e.g. the weather).
+The idea is that these two datasets may be correlated with data we don’t have information on (e.g. the weather including rain or sunshine hours).
 
 
 Data Sources :
